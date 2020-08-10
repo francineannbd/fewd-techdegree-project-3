@@ -1,0 +1,167 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    color: gray;
+}
+
+h1 {
+    text-transform: uppercase;
+    background: #2F3840;
+    color: white;
+    padding: 20px 0;
+    font-size: 1.5em;
+    margin-top: 0;
+    width: 100%;
+}
+
+.main-header,
+footer {
+    text-align: center;
+}
+
+h2,
+legend {
+    color: #2F3840;
+    font-size: 1.2em;
+    padding-top: 20px;
+}
+
+.intro {
+    border-bottom: 5px solid #2F3840;
+    padding-bottom: 15px
+}
+
+.intro,
+form {
+    width: 90%;
+    margin: 3px auto;
+}
+
+form {
+    border-top: 2px solid #2F3840;
+}
+
+legend {
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+fieldset {
+    border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="state"],
+select,
+textarea,
+label {
+    display: block;
+}
+
+label {
+    padding: 12px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="state"],
+select,
+textarea {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1em;
+    padding: 15px 8px;
+    background: #dcdcdc;
+    border: none;
+    border-radius: 5px;
+} 
+
+input[placeholder] {
+    text-align: right;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+input[name*="zipcode"] {
+    width: 50%;
+    margin-left: 0;
+}
+
+input:focus {
+    border: 2px solid #4898C8;
+}
+
+.first {
+    border-bottom: 2px solid #2F3840;
+    padding-bottom: 30px;
+}
+
+.letters{
+    display: inline-block;
+    padding: 10px;
+}
+
+button {
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 20px;
+    font-size: 1em;
+    font-family:  'Merriweather', serif;
+    font-weight: bold;
+    border: none;
+    background: #46C6D3;
+    color: white;
+}
+
+footer p {
+    font-size: .875em;
+    font-style: italic;
+}
+
+@media (min-width:768px) {
+
+    .intro,
+    form {
+        width: 60%;
+    }
+
+    fieldset {
+        padding: 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="state"],
+    select,
+    .first label {
+        display: inline-block;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="state"],
+    select {
+        width: 75%;
+    }
+
+    .first label {
+        width: 24%;
+    }
+
+    input[name*="zipcode"] {
+        width: 50%;
+    }
+}
+
